@@ -38,8 +38,7 @@ end
 
 def add_s(array)
   array.map.with_index {|element, index|}
-  if index != 1 
-    element + "s"
+  index == 1? element, element + "s"
   end
 
 
